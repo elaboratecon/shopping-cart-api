@@ -1,0 +1,73 @@
+### GET all
+GET http://localhost:6666/
+
+### GET cart by ID
+GET http://localhost:6666/1
+
+### POST add item to cart
+POST http://localhost:6666/
+Content-Type: application/json
+
+{
+  "cartId": "1",
+  "products": [
+    {
+        "productId": "674bc56ea7ef1f2ff44c6215",
+        "quantity": 1
+    }
+  ]
+}
+
+### PATCH update cart (add item)
+PATCH http://localhost:6666/
+Content-Type: application/json
+
+{
+  "cartId": "1",
+  "products": [
+    {
+        "productId": "674bc56ea7ef1f2ff44c6215",
+        "quantity": 1
+    },
+    {
+        "productId": "674bc572a7ef1f2ff44c621d",
+        "quantity": 5
+    }
+  ]
+}
+
+### PATCH update cart (update quanity of one item)
+PATCH http://localhost:6666/
+Content-Type: application/json
+
+{
+  "cartId": "1",
+  "products": [
+    {
+        "productId": "674bc56ea7ef1f2ff44c6215",
+        "quantity": 1
+    },
+    {
+        "productId": "674bc572a7ef1f2ff44c621d",
+        "quantity": 3
+    }
+  ]
+}
+
+### PATCH update cart (remove item if quantity is zero)
+PATCH http://localhost:6666/
+Content-Type: application/json
+
+{
+  "cartId": "1",
+  "products": [
+    {
+        "productId": "674bc56ea7ef1f2ff44c6215",
+        "quantity": 1
+    },
+    {
+        "productId": "674bc572a7ef1f2ff44c621d",
+        "quantity": 0
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+    "name": "product-recommender-app",
+    "version": "1.0.0",
+    "description": "Shopping Cart API for CS 361 - Software Engineering I",
+    "main": "shoppingCartService.js",
+    "scripts": {
+        "api": "nodemon shoppingCartService.js"
+    },
+    "keywords": [],
+    "author": "Jason Conover",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.21.1"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.7"
+    }
+}
