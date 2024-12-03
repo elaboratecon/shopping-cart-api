@@ -5,7 +5,7 @@ const path = require('path')
 const app = express()
 
 // set port
-const PORT = 6666
+const PORT = 5999
 
 const CARTS_FILE = path.join(__dirname, 'shoppingCarts.js')
 

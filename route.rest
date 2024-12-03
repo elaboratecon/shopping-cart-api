@@ -1,11 +1,11 @@
 ### GET all
-GET http://localhost:6666/
+GET http://localhost:5999/
 
 ### GET cart by ID
-GET http://localhost:6666/1
+GET http://localhost:5999/1
 
 ### POST add item to cart
-POST http://localhost:6666/
+POST http://localhost:5999/
 Content-Type: application/json
 
 {
@@ -19,7 +19,7 @@ Content-Type: application/json
 }
 
 ### PATCH update cart (add item)
-PATCH http://localhost:6666/
+PATCH http://localhost:5999/
 Content-Type: application/json
 
 {
@@ -37,7 +37,7 @@ Content-Type: application/json
 }
 
 ### PATCH update cart (update quanity of one item)
-PATCH http://localhost:6666/
+PATCH http://localhost:5999/
 Content-Type: application/json
 
 {
@@ -55,7 +55,7 @@ Content-Type: application/json
 }
 
 ### PATCH update cart (remove item if quantity is zero)
-PATCH http://localhost:6666/
+PATCH http://localhost:5999/
 Content-Type: application/json
 
 {
